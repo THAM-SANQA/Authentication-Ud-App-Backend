@@ -22,9 +22,9 @@ app.use(express.json());
 
 
 app.use("/api/auth", require("./routes/auth.routes"));
-app.get("/", (req, res) => {
-  res.redirect("/api/auth");
-});
+// app.get("/", (req, res) => {
+//   res.redirect("/api/auth");
+// });
 
 // Serve static assets (build folder) if in production
 if (process.env.NODE_ENV === 'production') {
